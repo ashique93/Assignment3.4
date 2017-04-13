@@ -3,12 +3,15 @@ package Practice2;
 public class Student {
 	
 
-
+// initializing variables
 	    private int rollNumber;
 	    private String name;
 	    private int Math;
 	    private int Science;
 	    private int Engilsh;
+	    
+// setting and getting variables with conditions	    
+	    
 
 	    public void setName(String s) {
 	        name = s;
@@ -65,10 +68,12 @@ public class Student {
 	    public int getEngilsh() {
 	        return Engilsh;
 	    }
+// method to return average of three mentioned subjects
 
 	    public double getAverage() {
 	        return (Math+ Science + Engilsh) / 3.0;
 	    }
+// method to print employees details and result
 
 	    public void printDetails() {
 	        System.out.println("Roll Number: " + rollNumber);
