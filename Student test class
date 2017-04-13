@@ -1,0 +1,31 @@
+package Practice2;
+
+import java.util.Scanner;
+
+	public class StudentTest {
+
+	    public static void main(String[] args) {
+	        Student student = new Student();
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter Name: ");
+	        String name = scanner.nextLine();
+	        student.setName(name);
+	        System.out.print("Enter roll number: ");
+	        int rollNumber = scanner.nextInt();
+	        student.setRollMumber(rollNumber);
+	        System.out.print("Enter Math: ");
+	        int Math = scanner.nextInt();
+	        student.setMath(Math);
+	        System.out.print("Enter Science: ");
+	        int Science = scanner.nextInt();
+	        student.setScience(Science);
+	        System.out.print("Enter English: ");
+	        int English = scanner.nextInt();
+	        student.setEngilsh(English);
+	        System.out.println();
+	        System.out.println("Printing details using printDetails() method: =");
+	        student.printDetails();
+	        System.out.println();
+	       
+	    }
+	}
