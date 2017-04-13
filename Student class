@@ -1,0 +1,81 @@
+package Practice2;
+
+public class Student {
+	
+
+
+	    private int rollNumber;
+	    private String name;
+	    private int Math;
+	    private int Science;
+	    private int Engilsh;
+
+	    public void setName(String s) {
+	        name = s;
+	    }
+
+	    public String getName() {
+	        return name;
+	    }
+
+	    public void setRollMumber(int r) {
+	        if (r > 0) {
+	            rollNumber = r;
+	        } else {
+	            System.out.println("Please enter valid roll number");;
+	        }
+	    }
+
+	    public int getRollNumber() {
+	        return rollNumber;
+	    }
+
+	    public void setMath(int m) {
+	        if (m >= 0 && m <= 100) {
+	        	Math = m;
+	        } else {
+	        	System.out.println("Not valid");
+	        }
+	    }
+
+	    public int getMath() {
+	        return Math;
+	    }
+
+	    public void setScience(int m) {
+	        if ((m >= 0) && (m <= 100)) {
+	        	Science = m;
+	        } else {
+	        	System.out.println("Not valid");
+	        }
+	    }
+
+	    public int getScience() {
+	        return Science;
+	    }
+
+	    public void setEngilsh(int m) {
+	        if ((m >= 0) && m <= 100) {
+	        	Engilsh = m;
+	        } else {
+	        	System.out.println("Not valid");
+	        }
+	    }
+
+	    public int getEngilsh() {
+	        return Engilsh;
+	    }
+
+	    public double getAverage() {
+	        return (Math+ Science + Engilsh) / 3.0;
+	    }
+
+	    public void printDetails() {
+	        System.out.println("Roll Number: " + rollNumber);
+	        System.out.println("Name: " + name);
+	        System.out.println("Marks in first Math: " + Math);
+	        System.out.println("Marks in second Science: " + Science);
+	        System.out.println("Marks in second English: " + Engilsh);
+	        System.out.println("Average: " + getAverage());
+	    }
+	}
